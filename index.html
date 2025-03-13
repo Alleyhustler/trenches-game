@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trenches Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>BORING MARKET; LET THE TRENCHES EAT</h1>
+      <button id="connectWallet" class="animate__animated animate__fadeIn">Connect Wallet</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2 class="animate__animated animate__fadeInDown">Trenches Game</h2>
+      <p class="animate__animated animate__fadeIn animate__delay-1s">Vote to Pump or Dump. based on your votes, you can achieve a reward. Rewards will be out after ATA/ 8 minutes</p>
+      <div class="stats animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="stat-item">
+          <p>Current Price</p>
+          <span id="currentPrice">$0.00</span>
+        </div>
+        <div class="stat-item">
+          <p>Growth Rate</p>
+          <span id="growthRate">0.00%</span>
+        </div>
+        <div class="stat-item">
+          <p>Time Until Next Vote</p>
+          <span id="countdown">00:00:00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sidebar -->
+<aside class="sidebar">
+    <div class="sidebar-content">
+      <!-- Project Image -->
+      <div class="project-image">
+        <img src="image-removebg-preview (14) (1).png" alt="Project Image"> 
+      </div>
+  
+      <!-- Buy Button -->
+      <a href="https://pump.fun/profile/Bh9vkmMXSTDTXpbTY43gGm41gVPL9czumnn3ASeqTNg2" target="_blank">
+        <button id="buyButton" class="buy-button">Buy $TGAME</button>
+      </a>
+        
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://x.com/Trenches_game" target="_blank" class="social-link">Twitter</a>
+        <a href="https://pump.fun/profile/Bh9vkmMXSTDTXpbTY43gGm41gVPL9czumnn3ASeqTNg2" target="_blank" class="social-link">BUY</a>
+        <a href="https://t.me/trenchesgame" target="_blank" class="social-link">Telegram</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Voting Section -->
+  <section class="voting">
+    <div class="container">
+      <h3 class="animate__animated animate__fadeIn">Vote Now</h3>
+      <div class="vote-buttons animate__animated animate__fadeIn animate__delay-1s">
+        <button id="pumpButton" class="pump">Pump 🚀</button>
+        <button id="dumpButton" class="dump">Dump 💣</button>
+      </div>
+      <div class="vote-status animate__animated animate__fadeIn animate__delay-2s">
+        <div class="vote-progress">
+          <div class="progress-bar pump-progress" style="width: 50%;"></div>
+          <div class="progress-bar dump-progress" style="width: 50%;"></div>
+        </div>
+        <div class="vote-percentages">
+          <p>Pump: <span id="pumpVotes">0%</span></p>
+          <p>Dump: <span id="dumpVotes">0%</span></p>
+        </div>
+      </div>
+      <!-- Add the Claim Reward Button Here -->
+      <div class="claim-reward animate__animated animate__fadeIn animate__delay-3s">
+        <button id="claimRewardButton" class="claim-reward-btn">Claim Reward / 8 minutes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Price History Section -->
+  <section class="history">
+    <div class="container">
+      <h3 class="animate__animated animate__fadeIn">Price History</h3>
+      <canvas id="priceChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 trenchs. All rights reserved.</p>
+      <p>Disclaimer: This is a high-risk game. Play at your own risk.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
